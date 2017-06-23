@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <header>
+      <h1>My Account</h1>
+    </header>
+  </div>
+  <div class="body-content">
+
+
+    <div class="donation-type-div">
+      <h2>Donation</h2>
+      <form class="donation-type-form" action="#" method="post">
+        <input type="radio" name="Donation" value="Monthly" checked="true">Monthly<br>
+        <input type="radio" name="Donation" value="Once">Once<br>
+        <input type="radio" name="Donation" value="Yearly">Yearly<br>
+
+    </div>
+
+
+    <div class="donation-amount-div">
+      <h2>Contribution</h2>
+      <!-- <form class="donation-amount-form" action="#" method="post"> -->
+        <h3>select an amount</h3>
+        <input type="radio" name="Donation-amount" value="10">10<br>
+        <input type="radio" name="Donation-amount" value="20">20<br>
+        <input type="radio" name="Donation-amount" value="50">50<br>
+        <input type="radio" name="Donation-amount" value="100">100<br>
+        <input type="radio" name="Donation-amount" value="other">other
+        <input type="text" name="Donation-amount">
+
+    </div>
+
+
+    <div class="personal-info">
+      <h2>Personal Information</h2>
+      <!-- <form class="personal-information-div" action="#" method="post"> -->
+<!--  first name-->
+        <label for="first-name">First Name</label>
+        <input type="text" name="personal-info" id="first-name"><br>
+<!-- last name -->
+        <label for="last-name">Last Name</label>
+        <input type="text" name="personal-info" id="last-name"><br>
+<!-- address -->
+        <label for="address">Address</label>
+        <div class="address-div">
+        <input type="text" name="personal-info" id="address" placeholder="Address line 1"><br>
+        <input type="text" name="personal-info" id="address" placeholder="Address line 1"><br>
+        <input type="text" name="personal-info" id="address" placeholder="Postal Code"><br>
+
+<!-- Province -->
+        <label for="province">Province</label>
+        <select class="" id="province">
+          <option value="Alberta">AB</option>
+          <option value="British Columbia">BC</option>
+          <option value="Manitoba">MB</option>
+          <option value="New Brunswick">NB</option>
+          <option value="Newfoundland and Labrador">NL</option>
+          <option value="Northwest Territories ">NT</option>
+          <option value="Nova Scotia">NS</option>
+          <option value="Nunavut">NU</option>
+          <option value="Ontario">ON</option>
+          <option value="Prince Edward Island">PE</option>
+          <option value="Quebec">QC</option>
+          <option value="Saskatchewan">SK</option>
+          <option value="Yukon">YT</option>
+        </select><br>
+<!-- country -->
+        <label for="country">First Name</label>
+        <select class="" id="country">
+          <option value="Canada">Canada</option>
+          <option value="States">States</option>
+        </select><br>
+<!--  phone-->
+        <label for="Phone-no">Phone No : </label>
+        <input type="tel" name="personal-info" id="Phone-no"><br>
+        <!--  email-->
+        <label for="email">Email </label>
+        <input type="email" name="personal-info" id="email"><br>
+        <!--confirm email  -->
+        <label for="confirm-email">Confirm Email </label>
+        <input type="email" name="personal-info" id="confirm-email"><br>
+
+    </div>
+<div class="payment-option-div">
+  <h2>Payment Options</h2>
+  <!-- <form class="payment-option-form"action="#"> -->
+    <!-- name on card -->
+    <label for="name-on-card">Name on Card  </label>
+    <input type="text" name="personal-info" id="name-on-card"><br>
+<!-- Card number -->
+    <label for="card-number">Card Number </label>
+    <input type="number" name="personal-info" id="card-number"><br>
+    <!-- Cvv -->
+    <label for="cvv">CVV </label>
+    <input type="number" name="personal-info" id="cvv"><br>
+    <!-- expiring date -->
+    <label for="expiring-date">Expiring Date  </label>
+    <input type="month" name="personal-info" id="expiring-date"><br>
+    <input type="reset"  value="Reset">
+    <input type="submit"  value="Submit">
+  </form>
+</div>
+
+  </div>
+</div>
+</body>
+</html>
