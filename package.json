@@ -1,0 +1,43 @@
+{
+  "name": "amarjotsingh",
+  "version": "1.0.0",
+  "description": "Charitable website for the project 2",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeamar/chariatableWebsite.git"
+  },
+  "keywords": [
+    "wildlife",
+    "charity",
+    "donations"
+  ],
+  "author": "amarjotsingh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeamar/chariatableWebsite/issues"
+  },
+  "homepage": "https://github.com/codeamar/chariatableWebsite#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "cssnano": "^3.10.0",
+    "cssnext": "^1.8.4",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "pixrem": "^3.0.2",
+    "precss": "^1.4.0"
+  }
+}
