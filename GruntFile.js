@@ -12,12 +12,11 @@ module.exports = function(grunt) {
 		},
 		sass: {
       options:{
-        scourceMap:true,
         style:'compressed'
       },
 			dist: {
 				files: {
-					"app/public/css/styles.css": ["app/public/sass/*.scss"]
+					"app/public/css/initial/styles.css": "app/public/sass/*.scss"
 				}
 			}
 		},
@@ -32,17 +31,17 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-                src: 'public/css/initial/*.css',
-								dest:'public/css/processed/styles.css'
+                src: 'app/public/css/initial/*.css',
+								dest:'app/public/css/processed/styles.css'
             }
         },
 		watch: {
 			css: {
-				files: ["public/sass/*.scss"],
+				files: ["app/public/sass/*.scss"],
 				tasks: ["css"]
 			},
 			scripts: {
-				files: ["app.js", "public/js/*.js"],
+				files: ["app.js", "app/public/js/*.js"],
 				tasks: ["jshint"]
 			}
 		}
