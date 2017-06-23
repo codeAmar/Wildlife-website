@@ -41,7 +41,7 @@ module.exports = function(grunt) {
 				tasks: ["css"]
 			},
 			scripts: {
-				files: ["app.js", "app/public/js/*.js"],
+				files: ["app/app.js", "app/public/js/*.js"],
 				tasks: ["jshint"]
 			}
 		}
