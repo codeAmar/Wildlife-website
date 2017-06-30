@@ -46,20 +46,20 @@
       <!-- <form class="personal-information-div" action="#" method="post"> -->
 <!--  first name-->
         <label for="first-name">First Name</label>
-        <input type="text" name="firstName" id="first-name"><br>
+        <input type="text" name="firstName" id="first-name" required><br>
 <!-- last name -->
         <label for="last-name">Last Name</label>
-        <input type="text" name="lastName" id="last-name"><br>
+        <input type="text" name="lastName" id="last-name" required><br>
 <!-- address -->
         <label for="address">Address</label>
         <div class="address-div">
-        <input type="text" name="addressLineOne" id="address" placeholder="Address line 1"><br>
-        <input type="text" name="addressLineTwo" id="address" placeholder="Address line 1"><br>
-        <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code"><br>
+        <input type="text" name="addressLineOne" id="address" placeholder="Address line 1" required><br>
+        <input type="text" name="addressLineTwo" id="address" placeholder="Address line 2"><br>
+        <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code" required><br>
 
 <!-- Province -->
         <label for="province">Province</label>
-        <select class="" id="province" name="province">
+        <select class="" id="province" name="province" required>
           <option value="Alberta">AB</option>
           <option value="British Columbia">BC</option>
           <option value="Manitoba">MB</option>
@@ -76,19 +76,19 @@
         </select><br>
 <!-- country -->
         <label for="country">First Name</label>
-        <select class="" id="country" name="country">
+        <select class="" id="country" name="country" required>
           <option value="Canada">Canada</option>
           <option value="States">States</option>
         </select><br>
 <!--  phone-->
         <label for="Phone-no">Phone No : </label>
-        <input type="tel" name="phoneNo" id="Phone-no"><br>
+        <input type="tel" name="phoneNo" id="Phone-no" required><br>
         <!--  email-->
         <label for="email">Email </label>
-        <input type="email" name="Email" id="email"><br>
+        <input type="email" name="Email" id="email" required><br>
         <!--confirm email  -->
         <label for="confirm-email">Confirm Email </label>
-        <input type="email" name="confirmEmail" id="confirm-email"><br>
+        <input type="email" name="confirmEmail" id="confirm-email" required><br>
 
     </div>
 <div class="payment-option-div">
@@ -96,16 +96,16 @@
   <!-- <form class="payment-option-form"action="#"> -->
     <!-- name on card -->
     <label for="name-on-card">Name on Card  </label>
-    <input type="text" name="nameOnCard" id="name-on-card"><br>
+    <input type="text" name="nameOnCard" id="name-on-card" required><br>
 <!-- Card number -->
     <label for="card-number">Card Number </label>
-    <input type="text" name="cardNumber" id="card-number"><br>
+    <input type="text" name="cardNumber" id="card-number" required><br>
     <!-- Cvv -->
     <label for="cvv">CVV </label>
-    <input type="text" name="cvv" id="cvv"><br>
+    <input type="text" name="cvv" id="cvv" required><br>
     <!-- expiring date -->
     <label for="expiring-date">Expiring Date  </label>
-    <input type="month" name="expiringDate" id="expiring-date"><br>
+    <input type="month" name="expiringDate" id="expiring-date" required><br>
     <input type="reset"  value="Reset">
     <input type="submit"  value="Submit">
   </form>
