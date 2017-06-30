@@ -36,7 +36,7 @@
         <input type="radio" name="Donation-amount" value="50">50<br>
         <input type="radio" name="Donation-amount" value="100">100<br>
         <input type="radio" name="Donation-amount" value="other">other
-        <input type="text" name="Donation-amount">
+        <input type="text" name="miscellaneousDonation">
 
     </div>
 
@@ -46,20 +46,20 @@
       <!-- <form class="personal-information-div" action="#" method="post"> -->
 <!--  first name-->
         <label for="first-name">First Name</label>
-        <input type="text" name="personal-info" id="first-name"><br>
+        <input type="text" name="firstName" id="first-name"><br>
 <!-- last name -->
         <label for="last-name">Last Name</label>
-        <input type="text" name="personal-info" id="last-name"><br>
+        <input type="text" name="lastName" id="last-name"><br>
 <!-- address -->
         <label for="address">Address</label>
         <div class="address-div">
-        <input type="text" name="personal-info" id="address" placeholder="Address line 1"><br>
-        <input type="text" name="personal-info" id="address" placeholder="Address line 1"><br>
-        <input type="text" name="personal-info" id="address" placeholder="Postal Code"><br>
+        <input type="text" name="addressLineOne" id="address" placeholder="Address line 1"><br>
+        <input type="text" name="addressLineTwo" id="address" placeholder="Address line 1"><br>
+        <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code"><br>
 
 <!-- Province -->
         <label for="province">Province</label>
-        <select class="" id="province">
+        <select class="" id="province" name="province">
           <option value="Alberta">AB</option>
           <option value="British Columbia">BC</option>
           <option value="Manitoba">MB</option>
@@ -76,19 +76,19 @@
         </select><br>
 <!-- country -->
         <label for="country">First Name</label>
-        <select class="" id="country">
+        <select class="" id="country" name="country">
           <option value="Canada">Canada</option>
           <option value="States">States</option>
         </select><br>
 <!--  phone-->
         <label for="Phone-no">Phone No : </label>
-        <input type="tel" name="personal-info" id="Phone-no"><br>
+        <input type="tel" name="phoneNo" id="Phone-no"><br>
         <!--  email-->
         <label for="email">Email </label>
-        <input type="email" name="personal-info" id="email"><br>
+        <input type="email" name="Email" id="email"><br>
         <!--confirm email  -->
         <label for="confirm-email">Confirm Email </label>
-        <input type="email" name="personal-info" id="confirm-email"><br>
+        <input type="email" name="confirmEmail" id="confirm-email"><br>
 
     </div>
 <div class="payment-option-div">
@@ -96,16 +96,16 @@
   <!-- <form class="payment-option-form"action="#"> -->
     <!-- name on card -->
     <label for="name-on-card">Name on Card  </label>
-    <input type="text" name="personal-info" id="name-on-card"><br>
+    <input type="text" name="nameOnCard" id="name-on-card"><br>
 <!-- Card number -->
     <label for="card-number">Card Number </label>
-    <input type="number" name="personal-info" id="card-number"><br>
+    <input type="text" name="cardNumber" id="card-number"><br>
     <!-- Cvv -->
     <label for="cvv">CVV </label>
-    <input type="number" name="personal-info" id="cvv"><br>
+    <input type="text" name="cvv" id="cvv"><br>
     <!-- expiring date -->
     <label for="expiring-date">Expiring Date  </label>
-    <input type="month" name="personal-info" id="expiring-date"><br>
+    <input type="month" name="expiringDate" id="expiring-date"><br>
     <input type="reset"  value="Reset">
     <input type="submit"  value="Submit">
   </form>
