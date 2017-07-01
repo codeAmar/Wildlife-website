@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		jshint: {
-			files: ["*.js","app/public/js/*.js", "app/test/*.js"],
+			files: ["*.js","app/public/js/main.js", "app/test/*.js"],
 			options: {
 				esnext: true,
 				globals: {
@@ -41,8 +41,11 @@ module.exports = function(grunt) {
 				tasks: ["css"]
 			},
 			scripts: {
-				files: ["app/app.js", "app/public/js/*.js"],
+				files: ["app/app.js", "app/public/js/main.js"],
 				tasks: ["jshint"]
+			},
+			ejs:{
+				files:['app/views/*.ejs','app/views/partials/template/*.ejs','app/views/partials/content/*.ejs']
 			}
 		}
 	});
