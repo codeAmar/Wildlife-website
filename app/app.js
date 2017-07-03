@@ -29,6 +29,7 @@ app.use(require('./routes/donate'));
 app.use(require('./routes/contact'));
 app.use(require('./routes/contribution'));
 app.use(require('./routes/aboutUs'));
+app.use(require('./routes/thanks'));
 
 // app.get('/',function(req,res){
 //   res.sendFile(path.join(__dirname,'public/index.html'))
