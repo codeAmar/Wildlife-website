@@ -1,9 +1,11 @@
+const path = require('path');
+require('dotenv').config();
 const bodyparser = require('body-parser');
 const cors = require('cors');
 const express = require('express');
 const expressValidator = require('express-validator');
 const app = express();
-const path = require('path');
+const nodemailer = require('nodemailer');
 // const request = require('request');
 
 app.use(bodyparser.json());
