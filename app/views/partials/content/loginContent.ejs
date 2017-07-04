@@ -1,0 +1,6 @@
+<p>this is the common login page<p>
+  <% if(!user) {%>
+<a href="/login/facebook">login to facebook</a>
+<% } else {%>
+  <p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
+<% } %>
