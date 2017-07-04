@@ -5,11 +5,24 @@ const cors = require('cors');
 const express = require('express');
 const expressValidator = require('express-validator');
 const app = express();
+const morgan = require('morgan');
+const cookieparser= require('cookie-parser');
 const nodemailer = require('nodemailer');
+const express_Session = require('express-session');
+const passport = require('passport');
+const Strategy = require('passport-facebook').Strategy;
+
 // const request = require('request');
 
+app.use(morgan('combined'));
+app.use(cookieparser());
 app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({extended:false}));
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(express_Session({
+  secret: 'dont be a developer',
+  resave:true,
+  saveUninitialized: true
+}));
 
 app.set('view engine','ejs');
 app.set('views','app/views');
@@ -24,7 +37,6 @@ app.use(expressValidator({
 app.use(cors());
 
 
-
 app.use(express.static(path.join(__dirname,'public')));
 app.use(require('./routes/index'));
 app.use(require('./routes/donate'));
@@ -32,6 +44,13 @@ app.use(require('./routes/contact'));
 app.use(require('./routes/contribution'));
 app.use(require('./routes/aboutUs'));
 app.use(require('./routes/thanks'));
+app.use(require('./routes/login'));
+app.use(require('./routes/profile'));
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 // app.get('/',function(req,res){
 //   res.sendFile(path.join(__dirname,'public/index.html'))
