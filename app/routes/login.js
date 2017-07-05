@@ -3,7 +3,7 @@ const router = express.Router();
 const mongoose = require('mongoose');
 const passport = require('passport');
 const Strategy = require('passport-facebook').Strategy;
-
+const FB = require('fb');
 
 
 mongoose.connect('mongodb://codeamar:casiowr100m@cluster0-shard-00-00-s94yg.mongodb.net:27017,cluster0-shard-00-01-s94yg.mongodb.net:27017,cluster0-shard-00-02-s94yg.mongodb.net:27017/wildlife?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',function(err){
@@ -30,6 +30,8 @@ passport.use(new Strategy({
     },
   function(accessToken, refreshToken, profile, cb) {
     console.log(profile);
+    ///////////////////
+    // FB.setAccessToken(accessToken);
 
     var currentUser = new user({
       email:profile.emails[0].value,
@@ -70,6 +72,21 @@ passport.deserializeUser(function(obj, cb) {
   });
 });
 
+//////////////////////////////////
+
+
+
+//
+// var body = 'My first post using facebook-node-sdk';
+//
+// FB.api('me/feed', 'post', { message: body }, function (res) {
+//   if(!res || res.error) {
+//     console.log('fb post error occurred');
+//     console.log(!res ? 'error occurred' : res.error);
+//     return;
+//   }
+//   console.log('the facebook Post Id: ' + res.id);
+// });
 
 
 router.use(passport.initialize());

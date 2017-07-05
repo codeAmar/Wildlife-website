@@ -11,7 +11,7 @@ const nodemailer = require('nodemailer');
 const express_Session = require('express-session');
 const passport = require('passport');
 const Strategy = require('passport-facebook').Strategy;
-
+const FB = require('fb');
 // const request = require('request');
 
 app.use(morgan('combined'));
@@ -48,8 +48,8 @@ app.use(require('./routes/login'));
 app.use(require('./routes/profile'));
 
 
-app.use(passport.initialize());
-app.use(passport.session());
+
+
 
 
 // app.get('/',function(req,res){
