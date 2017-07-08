@@ -26,6 +26,11 @@ app.use(express_Session({
 
 app.set('view engine','ejs');
 app.set('views','app/views');
+app.set('appData',{name:'Ashwin',amount:'100'});
+app.locals.donarName='Ashwin';
+app.locals.amount='50';
+
+
 
 app.use(expressValidator({
   customValidators:{

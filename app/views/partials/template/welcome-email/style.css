@@ -1,0 +1,60 @@
+body{
+  max-width: 1200px;
+  margin: auto;
+}
+  header h1{
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    background-color: black;
+    font-family: helvetica,sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    padding-top: 1.5rem;
+    padding-bottom: .75rem;
+  }
+  header{
+    background-color: black;
+  }
+  p{
+    text-align: left;
+    font-size: 1.25rem;
+    color:grey;
+    max-width: 75ch;
+    text-align: left;
+    font-size: 1rem;
+    font-family: georgia,serif;
+    margin: auto;
+    line-height: 1.5;
+    color: black;
+    margin: 1% auto;
+  }
+
+  .all-para{
+    margin: 7% auto;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 5px 3px 5px grey;
+  }
+
+.copyright-span{
+  font-weight: bold;
+  text-align: center;
+  font-size: .9rem;
+  font-family: georgia,sans-serif;
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.sincerely,.ps{
+  margin-top: 3%;
+}
+
+.first-para{
+  margin-top: 2%;
+}
