@@ -1,3 +1,20 @@
+$(document).ready(function(){
+    var name,email,message;
+    $("#contact-submit").click(function(){
+        name=$("#Name").val();
+        email=$("#Email").val();
+        message=$("#Message").val();
+        result=$("#Result").val();
+        $("#Result").text("Sending E-mail...Please wait");
+        $("#text-container-link").css('display','block');
+        $.get("http://localhost:3000/contact/send",{name:name,email:email,message:message},function(data){
+        if(data=="sent"){
+            $("#Result").empty().html("Email is been sent at "+ email +"  Please check inbox!");
+        }
+
+});
+    });
+});
 // $(document).ready(function(){
 //     var email,amount;
 //     $(".donation-type-form").submit(function(){
