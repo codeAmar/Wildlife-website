@@ -40,6 +40,7 @@ mongoose.connect('mongodb://codeamar:casiowr100m@cluster0-shard-00-00-s94yg.mong
 var userSchema = mongoose.Schema({
   id: String,
   email : String,
+  photos: String,
   name: String
 });
 
@@ -59,6 +60,7 @@ passport.use(new Strategy({
     var currentUser = new user({
       email:profile.emails[0].value,
       name:profile.displayName,
+      photos:profile.photos[0].value,
       id:profile.id
 
     });
