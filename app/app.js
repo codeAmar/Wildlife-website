@@ -14,7 +14,7 @@ const Strategy = require('passport-facebook').Strategy;
 const FB = require('fb');
 // const request = require('request');
 
-app.use(morgan('combined'));
+app.use(morgan('dev'));
 app.use(cookieparser());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:true}));

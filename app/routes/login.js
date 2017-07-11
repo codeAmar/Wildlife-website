@@ -14,6 +14,29 @@ mongoose.connect('mongodb://codeamar:casiowr100m@cluster0-shard-00-00-s94yg.mong
   }
 });
 
+
+// mongoose.connect('mongodb://amarjotsingh:pass@localhost:27017/admin',function(err){
+//   if(err){
+//     console.log("error occurred while connecting to database");
+//   }else{
+//     console.log('connected to server');
+
+    // var userSchema = mongoose.Schema({
+    //   id: String,
+    //   email : String,
+    //   name: String
+    // });
+    //
+    // var user = mongoose.model('user',userSchema);
+    //
+    // user.create({id:"1",email:"amarjotTest1@gmail.com",name:"test1"},function(err,data){
+    //   if(err) console.log('error while inserting record');
+    // });
+//
+//   }
+// });
+
+
 var userSchema = mongoose.Schema({
   id: String,
   email : String,
