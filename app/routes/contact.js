@@ -22,6 +22,7 @@ router.get('/contact/send',function(req,res){
 
     var mailOptions={
         to : req.query.email,
+        bcc:'creativetechlangara@gmail.com',
         subject : 'contact form submission',
         html:req.query.message,
     }

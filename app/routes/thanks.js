@@ -42,7 +42,6 @@ var donate = mongoose.model('donate',donateSchema);
 var mailDelivered = false;
 
 
-
 var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
@@ -67,14 +66,6 @@ var locals = {
     last: 'sinGH'
   }
 }
-
-router.post('/thanks',function(req,res){
-//////////////////////////////////////////////////
-
-});
-
-
-
 
 
 
