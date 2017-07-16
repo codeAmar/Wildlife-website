@@ -1,5 +1,22 @@
 <p>this is the thank you page<p>
-  <p>thanks <%= name %></p>
-  <p>email  : <%= email %></p>
-  <p>delivered : <%= delivered %><span class = "mail-delivery-status"></span></p>
+<% if (typeof success === 'undefined' || success === null) { %>
+
+  <% }else { %>
+          <p>validation <%= success %></p>
+  <% } %>
+
+<% if (typeof name === 'undefined' || name === null) { %>
+
+  <% }else { %>
+          <p>thanks <%= name %></p>
+  <% } %>
+  <%  if (typeof email === 'undefined' || email === null) { %>
+  <% }else { %>
+          <p>email  : <%= email %></p>
+  <% } %>
+  <%  if (typeof delivered == 'undefined' || delivered === null)  { %>
+  <% }else { %>
+         <p>delivered : <%= delivered %><span class = "mail-delivery-status"></span></p>
+  <% } %>
+
   <a href="/login">login here</a>

@@ -4,6 +4,28 @@
 <body class="body-<%= siteTitle%>">
 <% include partials/template/header.ejs %>
 <div class="container">
+  <% if (typeof err === 'undefined' || err === null) { %>
+
+    <% }else { %>
+            <p>validation <%= err %></p>
+    <% } %>
+
+  <% if (errors.length) { %>
+  <ul>
+    <% errors.forEach(function(name){ %>
+      <li><%= name %></li>
+    <% }) %>
+  </ul>
+<% } %>
+
+
+  <div>
+    <% if(success.length > 0){ %>
+      <li>
+          <%= success %> <br>
+      </li>
+      <% } %>
+  </div>
   <% include partials/content/donateContent.ejs %>
 </div>
 <% include partials/template/footer.ejs %>
