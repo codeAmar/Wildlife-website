@@ -1,5 +1,6 @@
+require('dotenv').config()
+
 const path = require('path');
-require('dotenv').config();
 const bodyparser = require('body-parser');
 const cors = require('cors');
 const express = require('express');
@@ -12,6 +13,7 @@ const express_Session = require('express-session');
 const passport = require('passport');
 const Strategy = require('passport-facebook').Strategy;
 const FB = require('fb');
+const flash = require('connect-flash');
 // const request = require('request');
 
 app.use(morgan('dev'));
@@ -24,13 +26,7 @@ app.use(express_Session({
   saveUninitialized: true
 }));
 
-app.set('view engine','ejs');
-app.set('views','app/views');
-app.set('appData',{name:'Ashwin',amount:'100'});
-app.locals.donarName='Ashwin';
-app.locals.amount='50';
-
-
+app.use(flash());
 
 app.use(expressValidator({
   customValidators:{
@@ -41,6 +37,12 @@ app.use(expressValidator({
 
 app.use(cors());
 
+
+app.set('view engine','ejs');
+app.set('views','app/views');
+app.set('appData',{name:'Ashwin',amount:'100'});
+app.locals.donarName='Ashwin';
+app.locals.amount='50';
 
 app.use(express.static(path.join(__dirname,'public')));
 app.use(require('./routes/index'));
