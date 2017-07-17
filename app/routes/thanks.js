@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const path = require('path');
 const express = require('express');
 const router = express.Router();
@@ -69,7 +70,7 @@ const wellknown = require('nodemailer-wellknown')
 
 router.get('/thanks', function(req, res) {
   res.render('thanks', {
-    siteTitle: 'addressss'
+    siteTitle: 'thanks'
   });
 });
 

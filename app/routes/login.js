@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
@@ -6,7 +8,7 @@ const Strategy = require('passport-facebook').Strategy;
 const FB = require('fb');
 
 
-mongoose.connect('mongodb://codeamar:casiowr100m@cluster0-shard-00-00-s94yg.mongodb.net:27017,cluster0-shard-00-01-s94yg.mongodb.net:27017,cluster0-shard-00-02-s94yg.mongodb.net:27017/wildlife?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',function(err){
+mongoose.connect(process.env.DB_URL,function(err){
   if(err){
     console.log("error occurred while connecting to database");
   }else{
@@ -47,8 +49,8 @@ var userSchema = mongoose.Schema({
 var user = mongoose.model('user',userSchema);
 
 passport.use(new Strategy({
-  clientID: '228016534379104',
-  clientSecret: 'f17eb61bdcca911ece7b5dbf862faefe',
+  clientID: process.env.FB_CLIENTID,
+  clientSecret: process.env.FB_CLIENTSECRET,
     callbackURL: 'http://localhost:3000/login/facebook/return',
     profileFields: ['id', 'displayName', 'photos', 'email','location','hometown']
     },
@@ -99,19 +101,6 @@ passport.deserializeUser(function(obj, cb) {
 
 //////////////////////////////////
 
-
-
-//
-// var body = 'My first post using facebook-node-sdk';
-//
-// FB.api('me/feed', 'post', { message: body }, function (res) {
-//   if(!res || res.error) {
-//     console.log('fb post error occurred');
-//     console.log(!res ? 'error occurred' : res.error);
-//     return;
-//   }
-//   console.log('the facebook Post Id: ' + res.id);
-// });
 
 
 router.use(passport.initialize());
