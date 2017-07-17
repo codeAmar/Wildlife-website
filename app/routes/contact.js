@@ -45,8 +45,8 @@ router.get('/contact/send',function(req,res){
     var mailOptions={
         to : req.query.email,
         bcc:'creativetechlangara@gmail.com',
-        subject : 'contact form submission',
-        html:req.query.message,
+        subject : 'Contact Form Submission',
+        html:`<h2>Dear</h2><p>Thanks for taking the time to contact us. We will get back to you shortly.</p><p>SaveWild.com</p><br><br><hr><br><p>Original message :</p><p>${req.query.message}</p>`
     }
 
     console.log(mailOptions);
@@ -79,12 +79,11 @@ console.log('found all ');
       if(!data){
         currentCommenter.save(function(err,data){
           if(err){
-            return cb(err);
+            console.log('error while saving new commentor');
           }
-          cb(null,currentCommenter);
         });
       }else{
-        cb(null,data);
+        console.log('comment already exists');
       }
     });
 
