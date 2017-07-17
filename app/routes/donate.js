@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const router = express.Router();
 const nodemailer = require('nodemailer');
@@ -7,7 +8,7 @@ const EmailTemplate = require('email-templates').EmailTemplate
 const wellknown = require('nodemailer-wellknown');
 const path = require('path');
 
-mongoose.connect('mongodb://codeamar:casiowr100m@cluster0-shard-00-00-s94yg.mongodb.net:27017,cluster0-shard-00-01-s94yg.mongodb.net:27017,cluster0-shard-00-02-s94yg.mongodb.net:27017/wildlife?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin',function(err){
+mongoose.connect(process.env.DB_URL,function(err){
   if(err){
     console.log("error occurred while connecting to database");
   }else{
@@ -46,8 +47,8 @@ var smtpTransport = nodemailer.createTransport({
   service: "gmail",
   host: "smtp.gmail.com",
   auth: {
-    user: "creativetechlangara",
-    pass: "Project2"
+    user:process.env.USER_THANKS ,
+    pass: process.env.PASSWORD_THANKS
   }
 });
 
@@ -158,16 +159,7 @@ deliverMail().then(function(mailDelivered){
   req.flash('err',err );
   res.redirect('/donate');
 });
- 
 
-
-
-
-
-  //
-  //
-  // req.flash('success','form validation completed without error');
-  // res.redirect('/thanks');
 }
 });
 

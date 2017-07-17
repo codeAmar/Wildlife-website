@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express');
 const router = express.Router();
 const nodemailer = require("nodemailer");
@@ -12,8 +14,8 @@ var SmtpTransport = nodemailer.createTransport({
     service: "gmail",
     host: "smtp.gmail.com",
     auth: {
-        user: "creativetechlangaraemail",
-        pass: "Project2"
+        user:process.env.USER_CONTACT,
+        pass:process.env.PASSWORD_CONTACT
     }
 });
 
@@ -26,13 +28,7 @@ router.get('/contact/send',function(req,res){
         subject : 'contact form submission',
         html:req.query.message,
     }
-    // router.post('/contact/send',function(req,res){
-    //
-    //     var mailOptions={
-    //         to : req.body.email,
-    //         subject : 'contact form submission',
-    //         html:req.body.message,
-    //     }
+
     console.log(mailOptions);
     SmtpTransport.sendMail(mailOptions, function(error, response){
      if(error){
