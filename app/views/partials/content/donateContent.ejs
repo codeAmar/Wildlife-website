@@ -2,6 +2,8 @@
 
 
 
+
+
     <div class="donation-type-div">
       <h2>Donation</h2>
       <form class="donation-type-form" action="/donate" method="post">
@@ -41,30 +43,25 @@
         <input type="text" name="addressLineOne" id="address" placeholder="Address line 1" required><br>
         <input type="text" name="addressLineTwo" id="address" placeholder="Address line 2"><br>
         <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code" required><br>
+        <select name="city" class="cities order-alpha" id="cityId">
+          <option value="">Select City</option>
+        </select>
+        <br>
 
 <!-- Province -->
-        <label for="province">Province</label>
-        <select class="" id="province" name="province" required>
-          <option value="Alberta">AB</option>
-          <option value="British Columbia">BC</option>
-          <option value="Manitoba">MB</option>
-          <option value="New Brunswick">NB</option>
-          <option value="Newfoundland and Labrador">NL</option>
-          <option value="Northwest Territories ">NT</option>
-          <option value="Nova Scotia">NS</option>
-          <option value="Nunavut">NU</option>
-          <option value="Ontario">ON</option>
-          <option value="Prince Edward Island">PE</option>
-          <option value="Quebec">QC</option>
-          <option value="Saskatchewan">SK</option>
-          <option value="Yukon">YT</option>
-        </select><br>
+        <label for="stateId">Province</label>
+
+        <select name="state" class="states order-alpha" id="stateId">
+          <option value="">Select State</option>
+        </select>
+
+        <br>
 <!-- country -->
-        <label for="country">First Name</label>
-        <select class="" id="country" name="country" required>
-          <option value="Canada">Canada</option>
-          <option value="States">States</option>
-        </select><br>
+        <label for="countryID">Country</label>
+        <select name="country" class="countries order-alpha" id="countryId">
+            <option value="">Select Country</option>
+        </select>
+        <br>
 <!--  phone-->
         <label for="Phone-no">Phone No : </label>
         <input type="tel" name="phoneNo" id="Phone-no" required><br>
