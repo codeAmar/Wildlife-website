@@ -14,6 +14,8 @@ const passport = require('passport');
 const Strategy = require('passport-facebook').Strategy;
 const FB = require('fb');
 const flash = require('connect-flash');
+const credit = require('creditcards/card');
+const CVV = require('creditcards/cvc');
 // const request = require('request');
 
 app.use(morgan('dev'));
