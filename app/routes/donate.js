@@ -117,7 +117,8 @@ router.post('/donate', function(req, res) {
   req.checkBody("addressLineOne", "Invalid addressLineOne").notEmpty();
   req.checkBody("addressLineTwo", "Invalid addressLineTwo").optional();
   req.checkBody("addressPostalCode", "Invalid addressPostalCode").notEmpty();
-  req.checkBody("province", "Invalid province").notEmpty();
+  req.checkBody("city", "Invalid City").notEmpty();
+  req.checkBody("state", "Invalid province").notEmpty();
   req.checkBody("country", "Invalid country").notEmpty().isAlpha();
   req.checkBody("phoneNo", "Invalid phoneNo").isNumeric().isLength({
     min: 10,
@@ -177,7 +178,7 @@ router.post('/donate', function(req, res) {
       addressLineOne: req.body.addressLineOne,
       addressLineTwo: req.body.addressLineTwo,
       addressPostalCode: req.body.addressPostalCode,
-      province: req.body.province,
+      province: req.body.state,
       country: req.body.country,
       phoneNo: req.body.phoneNo,
       Email: req.body.Email,
