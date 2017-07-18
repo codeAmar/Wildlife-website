@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
 
 //this is the donate form styles
-.body-donate{
+body-donate{
   max-width: 1600px;
   margin: auto;
   font-size: 1rem;
@@ -37,12 +37,17 @@
     background-color: rgb(162, 212, 56);
   }
 
-  .body-content > div {
+    .container> div {
     border: 1px solid grey;
     margin: auto;
     max-width: 50%;
     margin: 5% auto;
     padding: 3% 10%;
+  }
+
+  .personal-info> div {
+    border: 1px solid grey;
+    margin: auto;
   }
 
   input[type="reset"],
