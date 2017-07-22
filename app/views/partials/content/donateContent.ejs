@@ -1,8 +1,3 @@
-<p>this is donate page content section </p>
-
-
-
-
 
     <div class="donation-type-div">
       <h2>Donation</h2>
@@ -17,6 +12,7 @@
     <div class="donation-amount-div">
       <h2>Contribution</h2>
       <!-- <form class="donation-amount-form" action="#" method="post"> -->
+      <div>
         <h3>select an amount</h3>
         <input type="radio" name="DonationAmount" value="10">10<br>
         <input type="radio" name="DonationAmount" value="20">20<br>
@@ -24,6 +20,7 @@
         <input type="radio" name="DonationAmount" value="100">100<br>
         <input type="radio" name="DonationAmount" value="other">other
         <input type="text" name="miscellaneousDonation">
+      </div>
 
     </div>
 
@@ -38,15 +35,20 @@
         <label for="last-name">Last Name</label>
         <input type="text" name="lastName" id="last-name" required><br>
 <!-- address -->
-        <label for="address">Address</label>
         <div class="address-div">
-        <input type="text" name="addressLineOne" id="address" placeholder="Address line 1" required><br>
-        <input type="text" name="addressLineTwo" id="address" placeholder="Address line 2"><br>
-        <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code" required><br>
-        <select name="city" class="cities order-alpha" id="cityId">
-          <option value="">Select City</option>
-        </select>
+          <div class="address-text">
+
+          <label for="address">Address</label>
+          <div class="address-input">
+            <input type="text" name="addressLineOne" id="address" placeholder="Address line 1" required><br>
+            <input type="text" name="addressLineTwo" id="address" placeholder="Address line 2"><br>
+            <input type="text" name="addressPostalCode" id="address" placeholder="Postal Code" required><br>
+            <select name="city" class="cities order-alpha" id="cityId">
+              <option value="">Select City</option>
+            </select>
+          </div>
         <br>
+      </div>
 
 <!-- Province -->
         <label for="stateId">Province</label>
@@ -88,8 +90,10 @@
     <!-- expiring date -->
     <label for="expiring-date">Expiring Date  </label>
     <input type="month" name="expiringDate" id="expiring-date" required><br>
+    <div class="button-div">  
     <input type="reset"  value="Reset">
     <input type="submit"  value="Submit">
+  </div>
   </form>
 </div>
 

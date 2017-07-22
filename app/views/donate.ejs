@@ -4,10 +4,17 @@
 <body class="body-<%= siteTitle%>">
 <% include partials/template/header.ejs %>
 <div class="container">
+  <section class="fullbleed-section">
+    <img src="/images/image13.jpg" alt="teaser image">
+    <div class="title-div">
+      <h1>Donate</h1>
+      <p>Sea otters live close to shore in temperate coastal waters with rocky or soft ocean bottoms. Carnivores, they eat a variety of seafood and are one of the few mammals that utilize tools to feed. While the sea otter is the smallest marine mammal, it is the heaviest member of the otter family; males can weigh over 80 pounds and reach lengths of four feet. Long hunted for their valuable fur, sea otters were almost driven to extinction but are now protected by law. In spite of legal protection, over-hunting and pollution remain threats to the species.</p>
+    </div>
+  </section>
   <% if (typeof err === 'undefined' || err === null) { %>
 
     <% }else { %>
-            <p>validation <%= err %></p>
+            <p><%= err %></p>
     <% } %>
 
   <% if (errors.length) { %>
