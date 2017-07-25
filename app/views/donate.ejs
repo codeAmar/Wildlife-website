@@ -18,7 +18,7 @@
     <% } %>
 
   <% if (errors.length) { %>
-  <ul>
+  <ul class="error-ul">
     <% errors.forEach(function(name){ %>
       <li><%= name %></li>
     <% }) %>
@@ -26,7 +26,7 @@
 <% } %>
 
 
-  <div>
+  <div class="success-message-div">
     <% if(success.length > 0){ %>
       <li>
           <%= success %> <br>
