@@ -18,6 +18,20 @@
     max-width: 100%;
   }
 
+  .container {
+    .success-message-div{
+      margin: 0;
+      padding: 0;
+    }
+    .error-ul{
+      max-width: 50%;
+      margin: 5% auto;
+      li{
+        color: red;
+      }
+    }
+  }
+
   .donation-type-div {
     display: flex;
     flex-wrap: nowrap;
@@ -181,6 +195,9 @@
           }
         .donation-amount-div{
           display: block;
+        }
+        .error-ul{
+          max-width: 100%;
         }
       }
 
@@ -485,5 +502,328 @@
     .text-container a {
       max-width: 95%;
     }
+  }
+}
+
+
+
+
+// these are the thanks form design/////////////////////////////
+
+.body-thanks{
+
+    max-width: 1500px;
+    margin: auto;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    .main-article-div article .section-div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .main-article-div article h2{
+    margin-top: 2rem;
+  }
+
+  .main-article-div .img-section{
+    flex: 0 0 45%;
+    align-self: flex-start;
+  }
+
+  .main-article-div .text-section{
+    flex: 0 0 45%;
+  }
+
+  .main-article-div .text-section p:first-child{
+    margin-top: 0;
+  }
+
+  .main-article-div,
+  .small-teaser-div{
+    margin: auto 3%;
+  }
+
+  .small-img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 8%;
+  }
+  .small-img img{
+    flex: 0 1 30%;
+    display: block;
+  }
+
+  .small-img-div{
+    flex: 0 1 30%;
+  }
+
+  .signin-span a{
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    padding: 4% 14%;
+  }
+
+
+  .signin-span{
+    display: block;
+    padding-top: 7%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .body-thanks{
+
+    h1{
+      font-size: 2rem;
+    }
+
+    .main-article-div article h2{
+      margin-top: 1.75rem;
+      font-size: 1.75rem;
+    }
+    .main-article-div article .section-div{
+      display: block;
+    }
+    .signin-span a{
+      display: block;
+      text-align: center;
+    }
+    .small-img{
+          display: block;
+    }
+    .small-teaser-div h2{
+      font-size: 1.75rem;
+    }
+
+  }
+}
+
+
+
+// these are the login form design/////////////////////////////
+
+.body-login{
+
+    max-width: 1500px;
+    margin: auto;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    .main-article-div article .section-div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .main-article-div article h2{
+    margin-top: 2rem;
+  }
+
+  .main-article-div .img-section{
+    flex: 0 0 45%;
+    align-self: flex-start;
+  }
+
+  .main-article-div .text-section{
+    flex: 0 0 45%;
+  }
+
+  .main-article-div .text-section p:first-child{
+    margin-top: 0;
+  }
+
+  .main-article-div,
+  .small-teaser-div{
+    margin: auto 3%;
+  }
+
+  .small-img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 8%;
+  }
+  .small-img img{
+    flex: 0 1 30%;
+    display: block;
+  }
+
+  .small-img-div{
+    flex: 0 1 30%;
+  }
+
+  .signin-span a{
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    padding: 4% 14%;
+  }
+
+
+  .signin-span{
+    display: block;
+    padding-top: 7%;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .body-login{
+
+    h1{
+      font-size: 2rem;
+    }
+
+    .main-article-div article h2{
+      margin-top: 1.75rem;
+      font-size: 1.75rem;
+    }
+    .main-article-div article .section-div{
+      display: block;
+    }
+    .signin-span a{
+      display: block;
+      text-align: center;
+    }
+    .small-img{
+          display: block;
+    }
+    .small-teaser-div h2{
+      font-size: 1.75rem;
+    }
+
+  }
+}
+
+
+
+// these are the  profile page styles///////////////////
+
+
+.body-Profile{
+
+    max-width: 1500px;
+    margin: auto;
+
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+    .main-article-div article .section-div{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+
+  .main-article-div article h2{
+    margin-top: 2rem;
+  }
+
+  .main-article-div .img-section{
+    flex: 0 0 45%;
+    align-self: flex-start;
+  }
+
+  .main-article-div .text-section{
+    flex: 0 0 45%;
+  }
+
+  .main-article-div .text-section p:first-child{
+    margin-top: 0;
+  }
+
+  .main-article-div,
+  .small-teaser-div{
+    margin: auto 3%;
+  }
+
+  .small-img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-bottom: 8%;
+  }
+  .small-img img{
+    flex: 0 1 30%;
+    display: block;
+  }
+
+  .small-img-div{
+    flex: 0 1 30%;
+  }
+
+  .signin-span a{
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    padding: 4% 14%;
+  }
+
+
+  .signin-span{
+    display: block;
+    padding-top: 7%;
+  }
+
+
+.profile-div{
+  border: 1px solid grey;
+  padding: 2% 0%;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.pic-div img{
+  height: auto;
+  display: block;
+}
+
+.info-div{
+  flex: 1 1 20%;
+  max-width: 60%;
+}
+
+.info-div span{
+  display: block;
+}
+
+}
+
+@media screen and (max-width: 800px) {
+  .body-Profile{
+
+    h1{
+      font-size: 2rem;
+    }
+
+    .main-article-div article h2{
+      margin-top: 1.75rem;
+      font-size: 1.75rem;
+    }
+    .main-article-div article .section-div{
+      display: block;
+    }
+    .signin-span a{
+      display: block;
+      text-align: center;
+    }
+    .small-img{
+          display: block;
+    }
+    .small-teaser-div h2{
+      font-size: 1.75rem;
+    }
+
   }
 }

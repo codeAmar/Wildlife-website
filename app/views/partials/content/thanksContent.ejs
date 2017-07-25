@@ -1,22 +1,46 @@
-<p>this is the thank you page<p>
-<% if (typeof success === 'undefined' || success === null) { %>
+<div class="body-content">
+  <div class="full-bleed">
+    <img src="images/image3.jpg" alt="">
+  </div>
+  <div class="main-article-div">
+    <article>
+      <h2>Thanks for Donation</h2>
+      <div class="section-div">
 
-  <% }else { %>
-          <p>validation <%= success %></p>
-  <% } %>
+        <section class="img-section">
+          <img src="images/image2.jpg" alt="">
+        </section>
+        <section class="text-section">
+          <p>Thanks
+              <span>
+                <% if (typeof name === 'undefined' || name === null) { %>
+                    <span>Contributor</span>
+                  <% }else { %>
+                          <span><%= name %></span>
+                  <% } %>
+              </span>
+             for your contribution toward the preservation and re-establishment of crucial habitat vitally needed to sustain healthy population of numerous wildlife species.</p>
+          <p>You can Sign-in through facebook to create your account on the fly </p>
+          <span class="signin-span"><a href="/login">Sign In</a></span>
+        </section>
+      </div>
+    </article>
+  </div>
+  <div class="small-teaser-div">
+    <h2>We Care</h2>
+    <div class="small-img">
+      <div class="small-img-div">
+        <img src="images/image8.jpg" alt="">
+      </div>
 
-<% if (typeof name === 'undefined' || name === null) { %>
+      <div class="small-img-div">
+        <img src="images/image9.jpg" alt="">
+      </div>
 
-  <% }else { %>
-          <p>thanks <%= name %></p>
-  <% } %>
-  <%  if (typeof email === 'undefined' || email === null) { %>
-  <% }else { %>
-          <p>email  : <%= email %></p>
-  <% } %>
-  <%  if (typeof delivered == 'undefined' || delivered === null)  { %>
-  <% }else { %>
-         <p>delivered : <%= delivered %><span class = "mail-delivery-status"></span></p>
-  <% } %>
+      <div class="small-img-div">
+        <img src="images/image12.jpg" alt="">
+      </div>
 
-  <a href="/login">login here</a>
+    </div>
+  </div>
+</div>
