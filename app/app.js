@@ -16,7 +16,6 @@ const FB = require('fb');
 const flash = require('connect-flash');
 const credit = require('creditcards/card');
 const CVV = require('creditcards/cvc');
-const favicon = require('serve-favicon');
 // const request = require('request');
 
 app.use(morgan('dev'));
@@ -39,7 +38,6 @@ app.use(expressValidator({
     }}}));
 
 app.use(cors());
-app.use(favicon(path.join(__dirname,'public','favicon.ico')));
 
 
 app.set('view engine','ejs');
