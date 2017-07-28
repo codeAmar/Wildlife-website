@@ -1,4 +1,8 @@
 @import url( 'https://fonts.googleapis.com/css?family=Merriweather:400,400i|Open+Sans:400,600,700');
+// styles from designers
+@import url('https://fonts.googleapis.com/css?family=Bellefair');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre:400,500');
 
 
 
@@ -65,12 +69,6 @@
   }
 
   header {
-    padding: 3% 0;
-    background-color: rgb(162, 212, 56);
-    background-color: black;
-    color: white;
-    line-height: 1.5;
-    text-align: center;
 
     h1 {
       margin: 0;
@@ -142,7 +140,6 @@
   }
 
   footer {
-    background-color: black;
   }
 
   .fullbleed-section .title-div {
@@ -160,6 +157,84 @@
       line-height: 1.5;
     }
   }
+
+  header{
+    .outer{
+    	max-width: 1200px;
+    	margin: auto;
+    	background: url("images/texture.jpg")
+    }
+    .mid{
+    	width: 90%;
+    	margin-left: 5%;
+    	padding-top: 7%;
+
+    }
+
+    nav{
+    	background-color: black;
+    	color: white;
+    	padding: 2%;
+    }
+
+    ul {
+    	display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    }
+
+    li{
+    	font-family: 'Crimson Text', serif;
+        font-size: 24px;
+    }
+
+
+    a{
+    	text-decoration: none;
+    	color:white;
+    }
+
+    .donate{
+
+        background-color: orange;
+        color: white;
+        font-size: 16px;
+        border: none;
+      width: 150%;
+      height: 150%;
+        border-radius: 5%;
+
+    }
+  }
+
+
+  footer{
+  	background-color: black;
+
+  .f{
+  	text-align: center;
+
+  	color: white;
+  	padding: 2%;
+  	padding-bottom: 0;
+  	margin-top: 0;
+  }
+
+  .cont{
+  	text-align: center;
+  	color: white;
+  	font-size: 20px;
+
+  }
+
+  .maill{
+  	color: white;
+  	text-align: center;
+  	font-size: 18px;
+  }
+  }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -254,9 +329,6 @@
 
   footer,
   header {
-    background-color: black;
-    color: white;
-    text-align: center;
   }
 
   * {
@@ -480,7 +552,87 @@
       }
     }
   }
+
+  header{
+    .outer{
+      max-width: 1200px;
+      margin: auto;
+      background: url("images/texture.jpg")
+    }
+    .mid{
+      width: 90%;
+      margin-left: 5%;
+      padding-top: 7%;
+
+    }
+
+    nav{
+      background-color: black;
+      color: white;
+      padding: 2%;
+    }
+
+    ul {
+      display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    }
+
+    li{
+      font-family: 'Crimson Text', serif;
+        font-size: 24px;
+    }
+
+
+    a{
+      text-decoration: none;
+      color:white;
+    }
+
+    .donate{
+
+        background-color: orange;
+        color: white;
+        font-size: 16px;
+        border: none;
+      width: 150%;
+      height: 150%;
+        border-radius: 5%;
+
+    }
+  }
+
+  footer{
+  	background-color: black;
+
+  .f{
+  	text-align: center;
+
+  	color: white;
+  	padding: 2%;
+  	padding-bottom: 0;
+  	margin-top: 0;
+  }
+
+  .cont{
+  	text-align: center;
+  	color: white;
+  	font-size: 20px;
+
+  }
+
+  .maill{
+  	color: white;
+  	text-align: center;
+  	font-size: 18px;
+  }
+  }
+
 }
+
+
+
 @media screen and (max-width: 800px) {
   .body-contact {
     .outer-div {
@@ -574,8 +726,85 @@
     display: block;
     padding-top: 7%;
   }
+  header{
+    .outer{
+    	max-width: 1200px;
+    	margin: auto;
+    	background: url("images/texture.jpg")
+    }
+    .mid{
+    	width: 90%;
+    	margin-left: 5%;
+    	padding-top: 7%;
+
+    }
+
+    nav{
+    	background-color: black;
+    	color: white;
+    	padding: 2%;
+    }
+
+    ul {
+    	display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    }
+
+    li{
+    	font-family: 'Crimson Text', serif;
+        font-size: 24px;
+    }
+
+
+    a{
+    	text-decoration: none;
+    	color:white;
+    }
+
+    .donate{
+
+        background-color: orange;
+        color: white;
+        font-size: 16px;
+        border: none;
+      width: 150%;
+      height: 150%;
+        border-radius: 5%;
+
+    }
+  }
+
+  footer{
+  	background-color: black;
+
+  .f{
+  	text-align: center;
+
+  	color: white;
+  	padding: 2%;
+  	padding-bottom: 0;
+  	margin-top: 0;
+  }
+
+  .cont{
+  	text-align: center;
+  	color: white;
+  	font-size: 20px;
+
+  }
+
+  .maill{
+  	color: white;
+  	text-align: center;
+  	font-size: 18px;
+  }
+  }
 
 }
+
+
 
 @media screen and (max-width: 800px) {
   .body-thanks{
@@ -674,7 +903,86 @@
     padding-top: 7%;
   }
 
+  header{
+    .outer{
+      max-width: 1200px;
+      margin: auto;
+      background: url("images/texture.jpg")
+    }
+    .mid{
+      width: 90%;
+      margin-left: 5%;
+      padding-top: 7%;
+
+    }
+
+    nav{
+      background-color: black;
+      color: white;
+      padding: 2%;
+    }
+
+    ul {
+      display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    }
+
+    li{
+      font-family: 'Crimson Text', serif;
+        font-size: 24px;
+    }
+
+
+    a{
+      text-decoration: none;
+      color:white;
+    }
+
+    .donate{
+
+        background-color: orange;
+        color: white;
+        font-size: 16px;
+        border: none;
+      width: 150%;
+      height: 150%;
+        border-radius: 5%;
+
+    }
+  }
+
+
+  footer{
+  	background-color: black;
+
+  .f{
+  	text-align: center;
+
+  	color: white;
+  	padding: 2%;
+  	padding-bottom: 0;
+  	margin-top: 0;
+  }
+
+  .cont{
+  	text-align: center;
+  	color: white;
+  	font-size: 20px;
+
+  }
+
+  .maill{
+  	color: white;
+  	text-align: center;
+  	font-size: 18px;
+  }
+  }
+
 }
+
+
 
 @media screen and (max-width: 800px) {
   .body-login{
@@ -798,7 +1106,84 @@
   display: block;
 }
 
+header{
+  .outer{
+    max-width: 1200px;
+    margin: auto;
+    background: url("images/texture.jpg")
+  }
+  .mid{
+    width: 90%;
+    margin-left: 5%;
+    padding-top: 7%;
+
+  }
+
+  nav{
+    background-color: black;
+    color: white;
+    padding: 2%;
+  }
+
+  ul {
+    display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  }
+
+  li{
+    font-family: 'Crimson Text', serif;
+      font-size: 24px;
+  }
+
+
+  a{
+    text-decoration: none;
+    color:white;
+  }
+
+  .donate{
+
+      background-color: orange;
+      color: white;
+      font-size: 16px;
+      border: none;
+    width: 150%;
+    height: 150%;
+      border-radius: 5%;
+
+  }
 }
+
+footer{
+	background-color: black;
+
+.f{
+	text-align: center;
+
+	color: white;
+	padding: 2%;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+
+.cont{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+
+}
+
+.maill{
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+}
+}
+
+
 
 @media screen and (max-width: 800px) {
   .body-Profile{
@@ -826,4 +1211,1030 @@
     }
 
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// designer styles ////////////////////////////////////////////////////////////////
+
+
+.body-blog,
+.body-food,
+.body-forest,
+.body-gallery,
+.body-water,
+.body-wildlife,
+.body-index,
+.body-about{
+	max-width: 1200px;
+	margin: auto;
+
+
+.subheadngs{
+display:flex;
+max-width: 1200px;
+margin: auto;
+flex-wrap: wrap;
+justify-content: space-around;
+background-color: rgba(214, 213, 213, 0.51);
+padding-bottom: 1%;
+}
+.frst{
+width:24%;
+background-color: white;
+
+}
+main{
+	background-color:pink;
+}
+.main{
+	width: 90%;
+	margin-left: 5%;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+h3{
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+}
+li:hover{
+	color: red;
+}
+a:hover{
+	color: red;
+}
+li{
+	font-family: 'Crimson Text', serif;
+    font-size: 24px;
+}
+.main_head{
+
+	text-align: center;
+	font-family: 'Proza Libre', sans-serif;
+
+
+}
+
+.more{
+	text-align: center;
+	border-top: 1px solid orange;
+	padding-top: 6%;
+	margin-left: 7%;
+	margin-right: 7%;
+
+
+}
+.over{
+	height:500px !important;
+	width:100%;
+}
+.more a{
+	color: orange;
+	text-decoration: none;
+font-weight: bold;
+}
+.adverstmnt{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+margin:auto;
+}
+
+.fundraiser{
+	width: 29%;
+	padding-left: 2%;
+	padding-bottom: 4%;
+}
+.date,.join,.fund{
+	font-family: 'Crimson Text', serif;
+	font-size: 50px;
+	margin: auto;
+}
+.date{
+	margin-bottom: 0;
+	font-size: 80px;
+	color: orange;
+}
+.join{
+	margin-top: -16px;
+}
+.fund{
+	margin-top: -22px;
+}
+.news{
+	width: 69%;
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+ul {
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+}
+li{
+
+}
+.help{
+	padding-top: 6%;
+}
+.category{
+	width: 32%;
+}
+.events{
+	width: 100%;
+	font-size: 25px;
+	color: white;
+}
+.number{
+	color: black;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.bigg{
+	color: orange;
+	font-size: 25px;
+	font-weight: bold;
+}
+.circle{
+	background-color: white;
+	padding: 9%;
+	border-radius: 47%;
+}
+.adverstmnt{
+	margin-top: 2%;
+	background-color: #0e0e0e;
+	color: white;
+}
+.mission2{
+	color:#959293;
+	font-family: 'Proza Libre', sans-serif;
+
+
+}
+.join_us{
+	    height: 17%;
+    width: 37%;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+}
+.donate{
+
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    border: none;
+  width: 150%;
+  height: 150%;
+    border-radius: 5%;
+
+}
+.outer{
+	max-width: 1200px;
+	margin: auto;
+	background: url("images/texture.jpg")
+}
+.outer2{
+	max-width: 1200px;
+	margin: auto;
+	background: url("images/lion.jpg")
+}
+.rr{
+	margin: auto !important;
+}
+
+.main{
+	padding: 2%;
+}
+.rir{
+	margin-top: 1% !important;
+}
+
+.mid{
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 7%;
+
+}
+nav{
+	background-color: black;
+	color: white;
+	padding: 2%;
+}
+.thehedng{
+	width: 90%;
+	margin-left: 5%;
+}
+.n{
+	color: wheat;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 0;
+	font-family: 'Bellefair', serif;
+}
+/*==============BLOG PAGE=================*/
+
+.line1{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+
+}
+.half{
+	width: 48%;
+	position: relative;
+}
+.third{
+	width: 23%;
+	background-color: #317bbb;
+	border-radius: 4%;
+	position: relative;
+}
+.third2{
+	width: 23%;
+	border:1px solid black;
+	border-radius: 4%;
+	background-color: black;
+	color: white;
+}
+.p1,.p3,.p5,.news,.w{
+		font-family: 'Proza Libre', sans-serif;
+
+}
+.p2,.p4,.p6,.p7,.p8{
+		font-family: 'Crimson Text', serif;
+
+}
+.p1{
+	padding: 1%;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Proza Libre', sans-serif;
+}
+.p2{
+color: white;
+padding: 1%;
+text-align: center;
+}
+.help{
+	color:white;
+}
+.act{
+	margin-top: 10%;
+	margin-left: 22%;
+	background-color: black;
+	color: white;
+	width: 55%;
+	height: 43px;
+	border:none;
+	font-size: 17px;
+}
+.p3{
+	padding-left: 3%;
+	padding-right: 3%;
+	font-size: 25px;
+	font-weight: bold;
+
+}
+
+
+.overlay{
+	text-align: left;
+}
+
+
+.overlay{
+   position: absolute;
+   top: 250px;
+   left: 0;
+   width: 98%;
+   color: white;
+   padding-top: 2%;
+
+}
+
+.line2{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+padding: 2%;
+}
+.overlay3{
+	text-align: left;
+	padding-left: 2%;
+   position: absolute;
+
+   left: 0;
+   width: 98%;
+   color: white;
+   padding-top: 2%;
+
+}
+.back{
+	background: url("images/bottlenose.jpg");
+}
+
+.overlay2{
+	text-align: left;
+	padding-left: 2%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 98%;
+   color: white;
+   padding-top: 2%;
+
+}
+.p5{
+	text-align: center;
+}
+.p6{
+	text-align: center;
+}
+.wheat{
+	background-color: black;
+	color: white;
+	border:none;
+}
+.line3{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+padding: 1%;
+}
+.blc{
+	background-color: black;
+}
+.p7{
+	font-size: 30px;
+	padding-left: 5%;
+}
+.news{
+	color: yellow;
+	font-size: 18px;
+}
+.p8{
+	color: white;
+	font-size: 23px;
+	padding: 5%;
+}
+
+.half, .third, .third2 {
+  transition: transform 3s;
+}
+
+.half:hover {
+  transform: scale(1.1);
+}
+
+.third:hover {
+  transform: scale(1.1);
+}
+
+.third2:hover {
+  transform: scale(1.1);
+}
+.w{
+	width: 100%;
+}
+.line4{
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+
+	text-align: center;
+	background-color: rgba(142, 109, 15, 0.13);
+}
+/*.help{
+	border-top: 5px solid rgba(208, 206, 206, 0.56);
+	border-bottom: 5px solid rgba(208, 206, 206, 0.56);
+	padding-top: 1%;
+		padding-bottom: 1%;
+
+}*/
+.pppp{
+	border-radius: 10px;
+
+}
+.mission{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+background-color: rgba(214, 213, 213, 0.51);
+padding-top: 1%;
+margin-top: 1%;
+margin-bottom: 1%;
+max-width: 1200px;
+margin: auto;
+}
+
+
+
+
+
+.miss{
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 35px;
+	font-family: 'Crimson Text', serif;
+
+}
+.gol{
+
+	border-radius: 50%;
+}
+.gl{
+	width: 21%;
+}
+.food,.water,.wildlife,.forest{
+	text-align: center;
+
+}
+.food{
+	color: red;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+
+}
+.water{
+	color: orange;
+	font-family: 'Crimson Text', serif;
+
+}
+.wildlife{
+color: #53284f;
+font-family: 'Crimson Text', serif;
+
+}
+.forest{
+	color: blue;
+	font-family: 'Crimson Text', serif;
+
+}
+
+.head{
+	text-align: center;
+	color: white;
+	padding: 2%;
+	font-family: 'Proza Libre', sans-serif;
+
+
+
+}
+.cent{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	margin-left: 5%;
+	background-color:white;
+	border: 2px solid grey;
+	/*border-style: double;*/
+	margin-top: -2%;
+	margin-bottom: 4%;
+
+}
+.left{
+
+	width: 48%;
+	padding:1%;
+	font-family: 'Crimson Text', serif;
+
+}
+
+.right{
+	width:45%;
+	padding: 2%;
+	margin-top: 11%;
+}
+.right-one{
+	background: #55601c;
+	color: white;
+	padding: 1%;
+}
+.video{
+	margin-top: 2%;
+}
+
+
+.vid{
+	width: 100%;
+	height: auto;
+}
+.nine{
+	font-size: 90px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.rest{
+	text-align: center;
+}
+.cent2{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	background-color:#d4cfcf;
+	margin-top: 2%;
+	border: 2px solid #b9b2b2;
+	/*border-style: double;*/
+}
+.priority{
+	width: 100%;
+	text-align: center;
+	font-family: 'Crimson Text', serif;
+}
+.protect{
+	font-size: 30px;
+	margin-bottom: 0;
+}
+.foodd{
+	position: relative;
+}
+.fores{
+text-align: center;
+font-size: 90px;
+margin: 0;
+	font-family: 'Crimson Text', serif;
+
+}
+.cons{
+font-size:30px;
+font-weight: bold;
+text-align: center;
+padding: 5%;
+margin-top: 0;
+padding-top: 0;
+	font-family: 'Proza Libre', sans-serif;
+
+}
+
+.inner{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 107, 43, 0.58);
+
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*n-=======================new===================*/
+
+.adverstmnt{
+	max-width: 1200px;
+
+}
+
+.fores{
+		margin-top: 10%;
+	}
+
+.vid{
+	height: 250px;
+}
+
+main{
+	background-color:#0e0e0e;
+}
+.short{
+	background-color: none;
+}
+.cent{
+	width:100%;
+	margin-left: 0;
+}
+.cent2{
+	background-color:white;
+}
+
+/*new================*/
+.overlay{
+	 text-align: justify;
+   margin-left: 1%;
+
+}
+.p2{
+	text-align: justify;
+	padding: 4%;
+}
+.p3{
+	font-size: 20px;
+}
+.p4{
+	font-size: 60px;
+	color: yellow;
+}
+.overlay2{
+	padding:8%;
+	width: 85%;
+
+}
+/*.back image change*/
+.back{
+	background-size: cover;
+}
+.third2{
+	width: 24%;
+}
+.overlay3{
+	/*top hatana*/
+	bottom: 26px;
+	font-size: 22px;
+}
+/*.news color change*/
+.p8{
+	font-size: 30px;
+}
+
+.line1{
+	width: 98%;
+	margin: 1%;
+}
+
+.line2,.line3{
+	width: 98%;
+	margin-left: 1%;
+}
+.topp{
+	padding-top: 2%;
+	background-color: rgb(250, 245, 245);
+}
+
+/*============================query===================*/
+
+@media screen and ( max-width:960px){
+
+
+
+   .date{
+	   font-size:61px;
+
+ }
+	.right,.left{
+		width: 98%;
+	}
+	.join{
+		margin-top:0;
+	}
+	.fund{
+		margin-top: -15px;
+		font-size: 38px;
+	}
+	.help{
+		font-size: 16px;
+	}
+	.mission2{
+		font-size:13px;
+	}
+	.nb{
+		margin-top: 3%;
+		margin-bottom: 1%;
+	}
+	.fores{
+
+		font-size: 70px;
+	}
+	.p1{
+		font-size: 19px;
+	}
+	.p2{
+		padding: 0;
+		padding-left: 2px;
+		padding-right: 2px;
+
+	}
+	.p3,.news{
+		font-size: 17px;
+	}
+	.p4{
+		font-size:32px;
+	}
+.act{
+	margin-top: 0;
+}
+.overlay{
+	font-size: 17px;
+	top:163px;
+}
+.p6{
+	margin: 0;
+}
+
+.p8 {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+}
+.overlay3 {
+    bottom: 0px;
+    font-size: 17px;
+}
+.p7{
+	margin: 0;
+	font-size: 20px;
+}
+
+  }
+@media screen and (max-width:880px){
+
+	 .date{
+	   font-size:51px;
+
+ }
+
+
+	.cons{
+		font-size: 18px;
+	}
+	.gl{
+		width:40%;
+
+	}
+	.join{
+		margin-top:0;
+	}
+
+
+	.donate{
+		width: 134%;
+    height: 126%;
+	}
+
+	.fund{
+		margin-top: -10px;
+		font-size: 28px;
+	}
+	.help{
+		font-size: 16px;
+	}
+	.mission2{
+		font-size:13px;
+	}
+	.nb{
+		margin-top: 3%;
+		margin-bottom: 1%;
+	}
+	.frst{
+		width:44%;
+	}
+	.over{
+		height:400px !important;
+	}
+	.fores{
+
+		font-size: 62px;
+	}
+
+}
+
+@media screen and (max-width:770px){
+
+
+.overlay {
+    font-size: 17px;
+    top: 325px;
+
+}
+
+.half{
+	width:98%;
+}
+
+.third,.third2{
+	width: 48%;
+}
+.pppp{
+	margin-top: 1%;
+}
+.hupp{
+	width: 83%;
+
+}
+
+}
+
+@media screen and (max-width:570px){
+	.frst{
+		width:98%;
+	}
+	.gl{
+		width:70%;
+
+	}
+	.fundraiser{
+		width:98%;
+	}
+	.date, .join, .fund, .mission2{
+		text-align:center;
+	}
+	.join_us{
+		margin-left: 29%;
+	}
+	.news, .category{
+		display:none;
+	}
+	.n{
+		font-size: 22px;
+	}
+	.donate{
+		    width: 117%;
+    height: 128%;
+	}
+	li{
+		font-size: 17px;
+	}
+
+	.over{
+		height:320px !important;
+	}
+	.cons{
+		font-size: 18px;
+	}
+	.fores{
+
+		font-size: 55px;
+	}
+
+
+.overlay {
+    font-size: 17px;
+    top: 225px;
+
+}
+
+.half{
+	width:98%;
+}
+
+.third,.third2{
+	width: 98%;
+}
+.third{
+	padding-bottom: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.pppp{
+	margin-top: 1%;
+}
+
+.back{
+	height:200px;
+
+}
+.blc{
+	display: none;
+}
+
+}
+
+
+
+/*==================gallery==============*/
+
+
+.gallery{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.gall{
+	width: 32.33%;
+	border: 1px solid white;
+}
+
+.pol{
+	color: white;
+	text-align: center;
+}
+
+.main{
+	padding-left: 0;
+padding-right: 0;
+}
+
+
+
+@media screen and (max-width:880px){
+
+.gall{
+	width: 48%;
+}
+}
+
+@media screen and (max-width:570px){
+
+.gall{
+	width: 98%;
+}
+
+	}
+
+
+/*===================================ABOUT US===*/
+
+.left2{
+
+	width: 98%;
+	padding:1%;
+	font-family: 'Crimson Text', serif;
+
+}
+.ext{
+	text-align: center;
+}
+
+.missionn{
+	display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+list-style: none;
+background-color: white;
+padding-top: 1%;
+margin-top: 1%;
+margin-bottom: 1%;
+max-width: 1200px;
+margin: auto;
+}
+
+
+footer{
+	background-color: black;
+
+.f{
+	text-align: center;
+
+	color: white;
+	padding: 2%;
+	padding-bottom: 0;
+	margin-top: 0;
+}
+
+.cont{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+
+}
+
+.maill{
+	color: white;
+	text-align: center;
+	font-size: 18px;
+}
+}
+
 }

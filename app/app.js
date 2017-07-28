@@ -53,6 +53,13 @@ app.use(require('./routes/aboutUs'));
 app.use(require('./routes/thanks'));
 app.use(require('./routes/login'));
 app.use(require('./routes/profile'));
+app.use(require('./routes/blog'));
+app.use(require('./routes/food'));
+app.use(require('./routes/forest'));
+app.use(require('./routes/gallery'));
+app.use(require('./routes/water'));
+app.use(require('./routes/wildlife'));
+
 
 
 app.listen(3000,function(){
