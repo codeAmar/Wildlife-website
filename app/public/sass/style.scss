@@ -162,7 +162,7 @@
     .outer{
     	max-width: 1200px;
     	margin: auto;
-    	background: url("images/texture.jpg")
+    	background: url("/images/texture.jpg");
     }
     .mid{
     	width: 90%;
@@ -1884,7 +1884,9 @@ main{
 /*.back image change*/
 .back{
 	background-size: cover;
+  background-color: black;
 }
+
 .third2{
 	width: 24%;
 }
